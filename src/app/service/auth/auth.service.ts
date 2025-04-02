@@ -9,7 +9,7 @@ export class AuthService {
 
   constructor(private oauthService: OAuthService) {
     this.oauthService.configure(authConfig);
-    this.oauthService.loadDiscoveryDocumentAndTryLogin();
+    void this.oauthService.loadDiscoveryDocumentAndTryLogin();
   }
 
   loginWithGoogle() {
